@@ -59,7 +59,7 @@ public:
     RectangleQuadtree(const char* str){
         CImg<float> A(str);
         R = Binarizar(A,85);
-        R.display();
+       // R.display();
         NR = CImg<unsigned char> (R.width(),R.height(),1,1,255);
         execute();
         save(root);
@@ -140,7 +140,7 @@ public:
 };
 
 int main() {
-    RectangleQuadtree A("../carta.jpg");
+    RectangleQuadtree A("../images/skate.jpg");
     
    // CImg<float> A("protesta.jpg");
    // CImg<unsigned char> R = Binarizar(A,40);
